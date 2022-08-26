@@ -1,11 +1,11 @@
 package net.londatiga.android.bluebamboo;
 
-import android.databinding.DataBinderMapper;
-import android.databinding.DataBindingComponent;
-import android.databinding.ViewDataBinding;
 import android.util.SparseArray;
 import android.util.SparseIntArray;
 import android.view.View;
+import androidx.databinding.DataBinderMapper;
+import androidx.databinding.DataBindingComponent;
+import androidx.databinding.ViewDataBinding;
 import java.lang.Integer;
 import java.lang.Object;
 import java.lang.Override;
@@ -17,9 +17,6 @@ import java.util.List;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
   private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(0);
-
-  static {
-  }
 
   @Override
   public ViewDataBinding getDataBinder(DataBindingComponent component, View view, int layoutId) {
@@ -68,12 +65,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   @Override
   public List<DataBinderMapper> collectDependencies() {
     ArrayList<DataBinderMapper> result = new ArrayList<DataBinderMapper>(1);
-    result.add(new com.android.databinding.library.baseAdapters.DataBinderMapperImpl());
+    result.add(new androidx.databinding.library.baseAdapters.DataBinderMapperImpl());
     return result;
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(2);
+    static final SparseArray<String> sKeys = new SparseArray<String>(1);
 
     static {
       sKeys.put(0, "_all");
@@ -82,8 +79,5 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static class InnerLayoutIdLookup {
     static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(0);
-
-    static {
-    }
   }
 }

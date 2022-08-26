@@ -1,4 +1,4 @@
-package android.databinding;
+package androidx.databinding;
 
 public interface DataBindingComponent {
 }
