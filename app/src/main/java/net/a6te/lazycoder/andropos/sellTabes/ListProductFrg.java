@@ -5,19 +5,17 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.databinding.DataBindingUtil;
+import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.LocalBroadcastManager;
-import android.support.v7.app.AlertDialog;
-import android.text.TextUtils;
-import android.util.Log;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+import androidx.appcompat.app.AlertDialog;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.Toast;
 
 import net.a6te.lazycoder.andropos.R;
 import net.a6te.lazycoder.andropos.adapters.ProductListAdapter;
@@ -25,8 +23,6 @@ import net.a6te.lazycoder.andropos.databinding.FragmentListProductFrgBinding;
 import net.a6te.lazycoder.andropos.modelClass.ProductListModel;
 
 import java.util.ArrayList;
-
-import static net.a6te.lazycoder.andropos.database.Stock.TAG;
 
 public class ListProductFrg extends Fragment {
 

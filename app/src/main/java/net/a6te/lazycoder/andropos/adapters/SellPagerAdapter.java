@@ -1,8 +1,8 @@
 package net.a6te.lazycoder.andropos.adapters;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import net.a6te.lazycoder.andropos.sellTabes.AddProductFrg;
 import net.a6te.lazycoder.andropos.sellTabes.ListProductFrg;
