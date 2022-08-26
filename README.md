@@ -21,3 +21,4 @@ Google play store link: https://play.google.com/store/apps/details?id=net.a6te.l
 This project is licensed under the MIT License - see the [License File](LICENSE) for details
 
 samuel was here
+thomas was here
