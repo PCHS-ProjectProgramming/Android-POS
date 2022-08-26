@@ -9,7 +9,7 @@ import net.londatiga.android.bluebamboo.util.Printer;
 import android.app.Activity;
 import android.app.ProgressDialog;
 
-import android.databinding.DataBindingUtil;
+import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
 
 import android.view.Menu;

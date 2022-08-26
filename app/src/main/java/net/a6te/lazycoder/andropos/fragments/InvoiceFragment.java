@@ -1,20 +1,18 @@
 package net.a6te.lazycoder.andropos.fragments;
 
 
-import android.content.Context;
-import android.databinding.DataBindingUtil;
+import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.Nullable;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import net.a6te.lazycoder.andropos.R;
 import net.a6te.lazycoder.andropos.adapters.InvoiceAdapter;
-import net.a6te.lazycoder.andropos.adapters.SellPagerAdapter;
 import net.a6te.lazycoder.andropos.databinding.FragmentInvoiceBinding;
 
 

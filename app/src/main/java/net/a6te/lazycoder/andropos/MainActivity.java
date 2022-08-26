@@ -6,24 +6,22 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.provider.Settings;
-import android.support.v4.content.LocalBroadcastManager;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
+
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.app.Fragment;
-import android.widget.Toast;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
@@ -35,8 +33,6 @@ import net.a6te.lazycoder.andropos.fragments.SellsFragment;
 import net.a6te.lazycoder.andropos.fragments.StockFragment;
 import net.a6te.lazycoder.andropos.fragments.UpdatingStatusFragment;
 import net.a6te.lazycoder.andropos.interfaces.DueLvInterface;
-import net.a6te.lazycoder.andropos.interfaces.UpdatePercentage;
-import net.a6te.lazycoder.andropos.test.SampleDataInsert;
 
 /*
 

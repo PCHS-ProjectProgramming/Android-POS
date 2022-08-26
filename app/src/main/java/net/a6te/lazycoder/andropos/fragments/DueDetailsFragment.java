@@ -1,23 +1,20 @@
 package net.a6te.lazycoder.andropos.fragments;
 
 
-import android.databinding.DataBindingUtil;
+import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.fragment.app.Fragment;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import net.a6te.lazycoder.andropos.R;
 import net.a6te.lazycoder.andropos.database.Customer;
 import net.a6te.lazycoder.andropos.database.CustomerDue;
 import net.a6te.lazycoder.andropos.database.SellsInfo;
-import net.a6te.lazycoder.andropos.database.Stock;
 import net.a6te.lazycoder.andropos.databinding.FragmentDueDetailsBinding;
 import net.a6te.lazycoder.andropos.modelClass.DueDetailsModel;
 

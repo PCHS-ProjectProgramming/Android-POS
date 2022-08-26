@@ -1,16 +1,11 @@
 package net.a6te.lazycoder.andropos.fragments;
 
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.databinding.DataBindingUtil;
+import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.LocalBroadcastManager;
-import android.util.Log;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,13 +15,9 @@ import net.a6te.lazycoder.andropos.UpdateDatabase;
 import net.a6te.lazycoder.andropos.adapters.StockAdapter;
 import net.a6te.lazycoder.andropos.database.Stock;
 import net.a6te.lazycoder.andropos.databinding.FragmentStockBinding;
-import net.a6te.lazycoder.andropos.modelClass.StockDatabaseModel;
 import net.a6te.lazycoder.andropos.modelClass.StockModel;
 
 import java.util.ArrayList;
-import java.util.concurrent.ExecutorService;
-
-import static net.a6te.lazycoder.andropos.database.Stock.TAG;
 
 
 /**

@@ -9,7 +9,7 @@
         android:orientation="vertical"
         tools:context="net.a6te.lazycoder.andropos.fragments.InvoiceFragment">
 
-        <android.support.design.widget.TabLayout
+        <com.google.android.material.tabs.TabLayout
             app:tabBackground="@drawable/after_tab_select"
             app:tabTextColor="#5e5c5c"
             app:tabSelectedTextColor="#5e5c5c"
@@ -25,7 +25,7 @@
             android:layout_height="0.5dp"
             android:background="#efefef"/>
 
-        <android.support.v4.view.ViewPager
+        <androidx.viewpager.widget.ViewPager
             android:layout_weight="4"
             android:id="@+id/invoice_pager"
             android:layout_width="match_parent"
