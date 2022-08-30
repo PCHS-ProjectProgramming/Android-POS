@@ -4,22 +4,22 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="16"
-6-->/home/mason/StudioProjects/Android-POS-PC/p25Demo/src/main/AndroidManifest.xml
+6-->C:\Users\23eubtho\StudioProjects\Android-POS\p25Demo\src\main\AndroidManifest.xml
 7        android:targetSdkVersion="26" />
-7-->/home/mason/StudioProjects/Android-POS-PC/p25Demo/src/main/AndroidManifest.xml
+7-->C:\Users\23eubtho\StudioProjects\Android-POS\p25Demo\src\main\AndroidManifest.xml
 8
 9    <uses-feature
-9-->/home/mason/StudioProjects/Android-POS-PC/p25Demo/src/main/AndroidManifest.xml:5:5-88
+9-->C:\Users\23eubtho\StudioProjects\Android-POS\p25Demo\src\main\AndroidManifest.xml:5:5-88
 10        android:name="android.hardware.bluetooth"
-10-->/home/mason/StudioProjects/Android-POS-PC/p25Demo/src/main/AndroidManifest.xml:5:19-60
+10-->C:\Users\23eubtho\StudioProjects\Android-POS\p25Demo\src\main\AndroidManifest.xml:5:19-60
 11        android:required="false" />
-11-->/home/mason/StudioProjects/Android-POS-PC/p25Demo/src/main/AndroidManifest.xml:5:61-85
+11-->C:\Users\23eubtho\StudioProjects\Android-POS\p25Demo\src\main\AndroidManifest.xml:5:61-85
 12
 13    <uses-permission android:name="android.permission.BLUETOOTH" />
-13-->/home/mason/StudioProjects/Android-POS-PC/p25Demo/src/main/AndroidManifest.xml:6:5-68
-13-->/home/mason/StudioProjects/Android-POS-PC/p25Demo/src/main/AndroidManifest.xml:6:22-65
+13-->C:\Users\23eubtho\StudioProjects\Android-POS\p25Demo\src\main\AndroidManifest.xml:6:5-68
+13-->C:\Users\23eubtho\StudioProjects\Android-POS\p25Demo\src\main\AndroidManifest.xml:6:22-65
 14    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-14-->/home/mason/StudioProjects/Android-POS-PC/p25Demo/src/main/AndroidManifest.xml:7:5-74
-14-->/home/mason/StudioProjects/Android-POS-PC/p25Demo/src/main/AndroidManifest.xml:7:22-71
+14-->C:\Users\23eubtho\StudioProjects\Android-POS\p25Demo\src\main\AndroidManifest.xml:7:5-74
+14-->C:\Users\23eubtho\StudioProjects\Android-POS\p25Demo\src\main\AndroidManifest.xml:7:22-71
 15
 16</manifest>

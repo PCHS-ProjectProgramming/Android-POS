@@ -1,46 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:background="@drawable/black"
         android:gravity="center"
-        tools:context="net.a6te.lazycoder.andropos.UserAuthentication"
-        android:background="@drawable/backgroundfive"
-        android:padding="30dp">
+        android:orientation="vertical"
+        android:padding="30dp"
+        tools:context="net.a6te.lazycoder.andropos.UserAuthentication">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/profle"/>
+            android:src="@drawable/profle" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="User name"
                 android:id="@+id/userNameEt"
-                android:text="admin"/>
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="User name"
-                android:id="@+id/userPasswordEt"
-                android:inputType="textPassword"
-                android:text="123456"/>
+                android:text="admin" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userPasswordEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User name"
+                android:inputType="textPassword"
+                android:text="123456"
+                android:visibility="visible" />
+        </com.google.android.material.textfield.TextInputLayout>
+
         <Button
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign In"
-            android:id="@+id/btnLogin"/>
+            android:text="Start" />
     </LinearLayout>
 
 </layout>

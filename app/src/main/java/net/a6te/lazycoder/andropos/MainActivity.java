@@ -85,12 +85,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void mobileAdsInitialize() {
-        MobileAds.initialize(this,
-                getResources().getString(R.string.app_add_id));
-
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+        System.out.println("penis");
 
     }
 
