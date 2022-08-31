@@ -26,7 +26,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="User name"
-                android:text="admin" />
+                android:text="admin"
+                android:textColor="#FFFFFF" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -37,9 +38,11 @@
                 android:id="@+id/userPasswordEt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="User name"
+                android:hint="Password:"
                 android:inputType="textPassword"
                 android:text="123456"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
                 android:visibility="visible" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -47,7 +50,7 @@
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Start" />
+            android:text="Sign In" />
     </LinearLayout>
 
 </layout>

@@ -8,23 +8,25 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
                 <TextView
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:fontFamily="monospace"
-                    android:paddingRight="30dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:paddingRight="0dp"
                     android:text="@string/app_name"
-                    android:textColor="#ffffff"/>
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
                 <ImageButton
                     android:id="@+id/btnUpdate"
-                    android:layout_marginRight="10dp"
-                    android:layout_alignParentRight="true"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/f"/>
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/refresh" />
         </RelativeLayout>
 
 

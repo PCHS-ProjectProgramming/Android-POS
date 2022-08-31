@@ -49,14 +49,15 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="24006"/>
+
                 <TextView
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:layout_centerHorizontal="true"
                     android:id="@+id/stockPSizeTv"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="24' DTE 240"/>
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="24' DTE 240" />
             </LinearLayout>
         </LinearLayout>
         <TextView
