@@ -80,7 +80,7 @@ public class UserAuthentication extends AppCompatActivity {
 
         /*
         * After prepare and add your API
-        * comment out the bellow code
+        * comment out the below code
         * */
 
 //        if (!new CheckInternetConnection().netCheck(this)){
