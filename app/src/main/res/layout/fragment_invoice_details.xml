@@ -11,14 +11,14 @@
             android:layout_height="match_parent">
 
             <ListView
-                android:dividerHeight="1dp"
-                android:divider="@drawable/single_line"
-                android:footerDividersEnabled="true"
-                android:headerDividersEnabled="true"
+                android:id="@+id/detailsInLv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/detailsInLv"
-                android:layout_above="@+id/temp_layout_details">
+                android:layout_above="@+id/temp_layout_details"
+                android:divider="@drawable/single_line"
+                android:dividerHeight="1dp"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true">
 
             </ListView>
             <RelativeLayout
@@ -29,30 +29,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
-                    android:textStyle="bold"
-                    android:textColor="@color/colorAccent"
-                    android:layout_centerVertical="true"
                     android:id="@+id/temp_details_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Total Profit : "/>
-                <TextView
-                    android:textStyle="bold"
-                    android:textColor="@color/colorAccent"
                     android:layout_centerVertical="true"
+                    android:text="Total Profit : "
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:id="@+id/totalProductInTv"
-                    android:layout_toRightOf="@+id/temp_details_tv"
-                    android:layout_marginLeft="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="180Tk"/>
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/temp_details_tv"
+                    android:text="420.69$"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
                 <Button
                     android:id="@+id/printDetailsInBtn"
-                    android:layout_alignParentRight="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Print"/>
+                    android:layout_alignParentRight="true"
+                    android:text="Print" />
             </RelativeLayout>
         </RelativeLayout>
     </RelativeLayout>
