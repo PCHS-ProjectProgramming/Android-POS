@@ -13,11 +13,11 @@
         tools:context="net.a6te.lazycoder.andropos.fragments.StockFragment">
 
         <ListView
-            android:dividerHeight="1dp"
-            android:divider="@drawable/single_line"
+            android:id="@+id/stockLv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/stockLv">
+            android:divider="@drawable/single_line"
+            android:dividerHeight="1dp">
 
         </ListView>
 

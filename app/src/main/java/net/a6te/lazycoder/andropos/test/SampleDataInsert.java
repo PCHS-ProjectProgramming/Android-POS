@@ -54,15 +54,18 @@ public class SampleDataInsert {
 
 //            stock table
 
-            stock.storeStock(new StockDatabaseModel("990","2","30","1"));
-            stock.storeStock(new StockDatabaseModel("991","2","300","1"));
+            // Un-Tested WIP Entries
+            stock.storeStock(new StockDatabaseModel("06","2","30","1"));
+            stock.storeStock(new StockDatabaseModel("106","2","300","1"));
+
+            // Old DB Entries
             stock.storeStock(new StockDatabaseModel("992","2","40","1"));
             stock.storeStock(new StockDatabaseModel("993","2","60","1"));
             stock.storeStock(new StockDatabaseModel("994","2","98","1"));
             stock.storeStock(new StockDatabaseModel("995","2","500","1"));
             stock.storeStock(new StockDatabaseModel("996","2","60","1"));
 
-
+            // Working Entries
             stock.storeStock(new StockDatabaseModel("01","0","20","1"));
             stock.storeStock(new StockDatabaseModel("02","2","50","1"));
             stock.storeStock(new StockDatabaseModel("03","2","100","1"));
@@ -77,18 +80,34 @@ public class SampleDataInsert {
 //            private String productBrand;
 //            private String productSize;
 
-            product.storeProductInfo(new ProductDatabaseModel("Laptop","01","50000","55000","Pcs","Dell","18.5 inch"));
-            product.storeProductInfo(new ProductDatabaseModel("Mobile","02","10000","15000","Pcs","Samsung","5.5 inch"));
-            product.storeProductInfo(new ProductDatabaseModel("Iphone","03","70000","80000","Pcs","Apple","5.0 inch"));
-            product.storeProductInfo(new ProductDatabaseModel("Desktop","04","50000","90000","Pcs","Acer","20 inch"));
+            // TODO: Fix Refresh Button Logic, Currently Useless (Cache Clear required for DB map to update)
+            product.storeProductInfo(new ProductDatabaseModel("Drink","01","50000","55000","Pcs","Pepsi","16.9 FL OZ"));
+            product.storeProductInfo(new ProductDatabaseModel("Candy","02","10000","15000","Pcs","Various","Various"));
+            product.storeProductInfo(new ProductDatabaseModel("Snack","03","70000","80000","Pcs","Various","Various"));
+            product.storeProductInfo(new ProductDatabaseModel("Merch","04","50000","90000","Pcs","Gildan","S-XXL"));
+            // "Working" DB Entries (These just store product info, UI uses 'Store Stock' DB map
+            product.storeProductInfo(new ProductDatabaseModel("Nacho Cheese Doritos","06","1.25","1.25","Pcs","Snack","24 inch"));
 
-            product.storeProductInfo(new ProductDatabaseModel("Tv DTE24BF","990","50000","55000","Pcs","DANSAT","24 inch"));
-            product.storeProductInfo(new ProductDatabaseModel("Tv DTD28BF","991","55000","60000","Pcs","DANSAT","28 inch"));
-            product.storeProductInfo(new ProductDatabaseModel("Tv HD LED","992","60000","62000","Pcs","Samsung","30 inch"));
-            product.storeProductInfo(new ProductDatabaseModel("Tv HD CURVE","993","70000","73000","Pcs","Samsung","32.5 inch"));
-            product.storeProductInfo(new ProductDatabaseModel("Receiver 991","994","75000","79000","Pcs","Samsung","38.5 inch"));
-            product.storeProductInfo(new ProductDatabaseModel("Receiver 993","995","90000","93000","Pcs","Dell","45 inch"));
-            product.storeProductInfo(new ProductDatabaseModel("Al-Hidaya","996","100000","110000","Pcs","WALTON","50 inch"));
+
+            product.storeProductInfo(new ProductDatabaseModel("Mtn. Dew","101","1.25","1.25","Pcs","Drink","28 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Diet Mtn. Dew","102","1.25","1.25","Pcs","Drink","28 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Code Red Mtn. Dew","103","1.25","1.25","Pcs","Drink","30 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Dr. Pepper","104","1.25","1.25","Pcs","Drink","32.5 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Diet Dr. Pepper","105","1.25","1.25","Pcs","Drink","38.5 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Water","106","1.00","1.00","Drink","Dell","45 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Pepsi","107","1.25","1.25","Drink","Dell","50 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Diet Pepsi","108","1.25","1.25","Drink","DANSAT","28 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Cherry Pepsi","109","1.25","1.25","Drink","DANSAT","28 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("3 Musketeer","110","1.25","1.25","Candy","DANSAT","28 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Zero Bar","111","1.25","1.25","Candy","DANSAT","28 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Purple Gatorade","112","1.25","1.25","Drink","DANSAT","28 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Red Gatorade","113","1.25","1.25","Drink","DANSAT","28 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Yellow Gatorade","114","1.25","1.25","Drink","DANSAT","28 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Blue Gatorade","115","1.25","1.25","Drink","DANSAT","28 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Sweet Tea","116","1.25","1.25","Drink","DANSAT","28 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Hersheys","117","1.25","1.25","Candy","DANSAT","28 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Sour Patch Kids","118","1.25","1.25","Candy","DANSAT","28 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Sour Ropes","119","1.25","1.25","Candy","DANSAT","28 inch"));
 
 
 
