@@ -54,22 +54,27 @@ public class SampleDataInsert {
 
 //            stock table
 
-            // Un-Tested WIP Entries
-            stock.storeStock(new StockDatabaseModel("06","2","30","1"));
-            stock.storeStock(new StockDatabaseModel("106","2","300","1"));
+            // Working Entries
+            stock.storeStock(new StockDatabaseModel("001","Drink","60","1"));
+            stock.storeStock(new StockDatabaseModel("002","Snack","30","1"));
+            stock.storeStock(new StockDatabaseModel("003","Drink","24","1"));
+            stock.storeStock(new StockDatabaseModel("004","Drink","50","1"));
+            stock.storeStock(new StockDatabaseModel("005","Drink","45","1"));
+            stock.storeStock(new StockDatabaseModel("006","Drink","37","1"));
+            stock.storeStock(new StockDatabaseModel("007","Drink","29","1"));
 
             // Old DB Entries
-            stock.storeStock(new StockDatabaseModel("992","2","40","1"));
-            stock.storeStock(new StockDatabaseModel("993","2","60","1"));
-            stock.storeStock(new StockDatabaseModel("994","2","98","1"));
-            stock.storeStock(new StockDatabaseModel("995","2","500","1"));
-            stock.storeStock(new StockDatabaseModel("996","2","60","1"));
+            //stock.storeStock(new StockDatabaseModel("992","2","40","1"));
+            //stock.storeStock(new StockDatabaseModel("993","2","60","1"));
+            //stock.storeStock(new StockDatabaseModel("994","2","98","1"));
+            //stock.storeStock(new StockDatabaseModel("995","2","500","1"));
+            //stock.storeStock(new StockDatabaseModel("996","2","60","1"));
 
-            // Working Entries
-            stock.storeStock(new StockDatabaseModel("01","0","20","1"));
-            stock.storeStock(new StockDatabaseModel("02","2","50","1"));
-            stock.storeStock(new StockDatabaseModel("03","2","100","1"));
-            stock.storeStock(new StockDatabaseModel("04","0","15","1"));
+            // More Working Entries
+            stock.storeStock(new StockDatabaseModel("001","0","20","1"));
+            stock.storeStock(new StockDatabaseModel("002","2","50","1"));
+            stock.storeStock(new StockDatabaseModel("003","2","100","1"));
+            stock.storeStock(new StockDatabaseModel("004","0","15","1"));
 
             //product table
 //            private String productName;
@@ -85,16 +90,21 @@ public class SampleDataInsert {
             product.storeProductInfo(new ProductDatabaseModel("Candy","02","10000","15000","Pcs","Various","Various"));
             product.storeProductInfo(new ProductDatabaseModel("Snack","03","70000","80000","Pcs","Various","Various"));
             product.storeProductInfo(new ProductDatabaseModel("Merch","04","50000","90000","Pcs","Gildan","S-XXL"));
+
+
+
             // "Working" DB Entries (These just store product info, UI uses 'Store Stock' DB map
-            product.storeProductInfo(new ProductDatabaseModel("Nacho Cheese Doritos","06","1.25","1.25","Pcs","Snack","24 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Water","001","1.00","1.00","Bottles","Dell","45 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Nacho Cheese Doritos","002","1.25","1.25","Bags","Snack","24 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Mtn. Dew","003","1.25","1.25","Bottles","Drink","28 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Diet Mtn. Dew","004","1.25","1.25","Bottles","Drink","28 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Code Red Mtn. Dew","005","1.25","1.25","Bottles","Drink","30 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Dr. Pepper","006","1.25","1.25","Bottles","Drink","32.5 inch"));
+            product.storeProductInfo(new ProductDatabaseModel("Diet Dr. Pepper","007","1.25","1.25","Bottles","Drink","38.5 inch"));
 
 
-            product.storeProductInfo(new ProductDatabaseModel("Mtn. Dew","101","1.25","1.25","Pcs","Drink","28 inch"));
-            product.storeProductInfo(new ProductDatabaseModel("Diet Mtn. Dew","102","1.25","1.25","Pcs","Drink","28 inch"));
-            product.storeProductInfo(new ProductDatabaseModel("Code Red Mtn. Dew","103","1.25","1.25","Pcs","Drink","30 inch"));
-            product.storeProductInfo(new ProductDatabaseModel("Dr. Pepper","104","1.25","1.25","Pcs","Drink","32.5 inch"));
-            product.storeProductInfo(new ProductDatabaseModel("Diet Dr. Pepper","105","1.25","1.25","Pcs","Drink","38.5 inch"));
-            product.storeProductInfo(new ProductDatabaseModel("Water","106","1.00","1.00","Drink","Dell","45 inch"));
+
+
             product.storeProductInfo(new ProductDatabaseModel("Pepsi","107","1.25","1.25","Drink","Dell","50 inch"));
             product.storeProductInfo(new ProductDatabaseModel("Diet Pepsi","108","1.25","1.25","Drink","DANSAT","28 inch"));
             product.storeProductInfo(new ProductDatabaseModel("Cherry Pepsi","109","1.25","1.25","Drink","DANSAT","28 inch"));

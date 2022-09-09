@@ -4,7 +4,7 @@ package net.a6te.lazycoder.andropos.modelClass;
  * Created by Programmer on 5/21/2017.
  */
 
-public class StockDatabaseModel {
+public class  StockDatabaseModel {
 
 
     private String ProductId;
