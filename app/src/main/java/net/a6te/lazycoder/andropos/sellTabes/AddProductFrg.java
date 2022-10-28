@@ -18,10 +18,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import net.a6te.lazycoder.andropos.R;
+import android.R.id;
+import java.lang.*;
+
 import net.a6te.lazycoder.andropos.database.Product;
 import net.a6te.lazycoder.andropos.databinding.FragmentAddProductFrgBinding;
 import net.a6te.lazycoder.andropos.modelClass.ProductDatabaseModel;
@@ -46,14 +49,18 @@ public class AddProductFrg extends Fragment {
     private int selectedProductIndex = 0;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_add_product_frg, container, false);
         products = new Product(getActivity());
         allProducts = products.getProducts();
+
+
         return binding.getRoot();
     }
+
+
+
 
     @Override
     public void onViewCreated(final View view, @Nullable Bundle savedInstanceState) {
@@ -93,6 +100,7 @@ public class AddProductFrg extends Fragment {
                     }else{
                         Snackbar.make(view,"Stock limit exist",Snackbar.LENGTH_SHORT).show();
                     }
+
                 }catch (Exception e){
                     Snackbar.make(view,"No Product Selected ",Snackbar.LENGTH_SHORT).show();
                 }
@@ -100,7 +108,10 @@ public class AddProductFrg extends Fragment {
             }
         });
 
+
     }
+
+
 
     public void setSpinnerValue(){
 

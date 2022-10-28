@@ -13,6 +13,7 @@ import net.a6te.lazycoder.andropos.modelClass.ProductDatabaseModel;
 import net.a6te.lazycoder.andropos.modelClass.SellsDatabaseModel;
 import net.a6te.lazycoder.andropos.modelClass.StockDatabaseModel;
 import net.a6te.lazycoder.andropos.modelClass.UserDatabaseModel;
+import net.a6te.lazycoder.andropos.MainActivity;
 
 import static net.a6te.lazycoder.andropos.MainActivity.TAG;
 
@@ -37,6 +38,11 @@ public class SampleDataInsert {
         user = new User(context);
         sells = new SellsInfo(context);
 
+    }
+
+    public void addSomeSampleData(String name, String code, String boughtPrice, String price, String unit, String brand, String size){
+        product.storeProductInfo(new ProductDatabaseModel(name, code, boughtPrice, price, unit, brand, size));
+        stock.storeStock(new StockDatabaseModel(code,unit,"1",""));
     }
 
     public void storeSomeSampleData() {
@@ -71,10 +77,10 @@ public class SampleDataInsert {
             //stock.storeStock(new StockDatabaseModel("996","2","60","1"));
 
             // More Working Entries
-            stock.storeStock(new StockDatabaseModel("001","0","20","1"));
-            stock.storeStock(new StockDatabaseModel("002","2","50","1"));
-            stock.storeStock(new StockDatabaseModel("003","2","100","1"));
-            stock.storeStock(new StockDatabaseModel("004","0","15","1"));
+            //stock.storeStock(new StockDatabaseModel("001","0","20","1"));
+            //stock.storeStock(new StockDatabaseModel("002","2","50","1"));
+            //stock.storeStock(new StockDatabaseModel("003","2","100","1"));
+            //stock.storeStock(new StockDatabaseModel("004","0","15","1"));
 
             //product table
 //            private String productName;
@@ -101,6 +107,7 @@ public class SampleDataInsert {
             product.storeProductInfo(new ProductDatabaseModel("Code Red Mtn. Dew","005","1.25","1.25","Bottles","Drink","30 inch"));
             product.storeProductInfo(new ProductDatabaseModel("Dr. Pepper","006","1.25","1.25","Bottles","Drink","32.5 inch"));
             product.storeProductInfo(new ProductDatabaseModel("Diet Dr. Pepper","007","1.25","1.25","Bottles","Drink","38.5 inch"));
+            //product.storeProductInfo(new ProductDatabaseModel(,code,boughtPrice,price,unit,type,size));
 
 
 

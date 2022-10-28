@@ -15,7 +15,9 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.os.Debug;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import androidx.fragment.app.FragmentTransaction;
@@ -25,6 +27,7 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
+import net.a6te.lazycoder.andropos.database.Product;
 import net.a6te.lazycoder.andropos.fragments.DueDetailsFragment;
 import net.a6te.lazycoder.andropos.fragments.DueFragment;
 import net.a6te.lazycoder.andropos.fragments.InvoiceFragment;
@@ -33,6 +36,14 @@ import net.a6te.lazycoder.andropos.fragments.SellsFragment;
 import net.a6te.lazycoder.andropos.fragments.StockFragment;
 import net.a6te.lazycoder.andropos.fragments.UpdatingStatusFragment;
 import net.a6te.lazycoder.andropos.interfaces.DueLvInterface;
+import net.a6te.lazycoder.andropos.modelClass.ProductDatabaseModel;
+import net.a6te.lazycoder.andropos.modelClass.ProductListModel;
+import net.a6te.lazycoder.andropos.modelClass.StockDatabaseModel;
+import net.a6te.lazycoder.andropos.sellTabes.AddProductFrg;
+import net.a6te.lazycoder.andropos.database.*;
+import net.a6te.lazycoder.andropos.test.SampleDataInsert;
+
+import java.util.ArrayList;
 
 /*
 
@@ -108,6 +119,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         updateDatabase = new UpdateDatabase(MainActivity.this);
     }
 
+    public double total = 0;
+
+    private Product products;
+    private ProductListModel selectedProduct;
+    private ArrayList<ProductDatabaseModel> allProducts;
+    private int selectedProductIndex = 0;
+
+    public String[] productList = {"Water", "Mtn.Dew", "Doritos"};
+    public Double[] productPrice = {1.00, 1.25, 1.25};
+
+
+    public void addNew(String name, String code, String boughtPrice, String price, String unit, String brand, String size){
+        //TODO Add the ability to add new products and buttons to the stock model.
+
+        SampleDataInsert SDI = new SampleDataInsert(this);
+        SampleDataInsert SDIStock = new SampleDataInsert(this);
+        SDI.addSomeSampleData(name, code, boughtPrice, price, unit, brand, size);
+        System.err.println("your mom's a ho");
+    }
+
+
+
+    public void ButtonActionOne(View v){
+        int id = v.getId();
+        //String text = productList[id];
+
+        System.err.println(id);
+        addNew("mom", "001", "4.20", "6.90", "pieces", "homemeade", "Yo mama's so fat, when she wears high heels, she strikes oil.");
+
+        //v.setText((int) total);
+
+    }
 
     @Override
     public void onClick(View v) {

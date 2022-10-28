@@ -154,6 +154,7 @@ public ArrayList<ProductDatabaseModel> getProducts() {
         }
     }
 
+
     public ProductListModel getProductDetails(String productCode) {
 
         this.Open();
